@@ -1,13 +1,12 @@
 const nodemailer = require("nodemailer");
 
-
 async function sendEmail(
     to,
     subject,
     text,
     html
 ) {
-  console.log(process.env);
+
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
