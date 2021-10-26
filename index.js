@@ -21,6 +21,6 @@ app.use(cors());
 
 app.use('/api/v1', require('./routes/email-routes'));
 
-app.listen(4040, () => {
+app.listen(process.env.PORT || 4040, () => {
     console.log("Magic happening at http://localhost:4040");
 })
